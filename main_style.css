@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+*{
+    list-style-type: none;
+    text-decoration: none;   
+}
+
+body{
+    width: 100%;
+}
+
+:root{
+    --default-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --extreme-light-white: rgb(211, 211, 211);
+}
+
+body{
+    background-color: #1a1a1a;
+}
+
+header h1{
+  font: normal 600 30px var(--default-font);  
+  color: var(--extreme-light-white);
+  text-align: center;
+}
+
+section.counter{
+    display: flex;
+    justify-content: center;
+}
+
+div.counter_container{
+    display: flex;
+    width: 80vw;
+    max-width: 80vw;
+    border: solid 2px var(--extreme-light-white);
+    padding: 15px 80px
+}
+
+div.counter_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+div.counter_content h3{
+    font: normal 500 18px var(--default-font);
+    color: var(--extreme-light-white);
+    text-align: center;
+    margin: 5px 0;
+}
+
+div.counter_content input{
+    border-radius: 5px;
+    padding: 2px;
+    border: none;
+}
+
+div.counter_content input:focus{
+    outline: solid 2px #525252;
+}
+
+div.qtd_input_container input{
+    font: normal 500 16px var(--default-font);
+    max-width: 50px;
+}
+
+div.add_button{
+    margin: 20px 0 0 0px
+}
+
+div.add_button input{
+    font: normal 500 16px var(--default-font); 
+    cursor: pointer;
+    background-color: #56b463;
+    border: none;
+    border-radius: 7px;
+    transition: .2s;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+div.add_button input:hover{
+    background-color:#76bb7f
+}
+
+div.add_button input:active{
+    background-color: #a85555;
+}
+
